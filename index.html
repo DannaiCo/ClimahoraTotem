@@ -49,7 +49,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 65px;
-		color:#9b0047;
+	 color:#9b0047;
       font-family: OpenSans, sans-serif;
     }
     .weather-description {
@@ -189,26 +189,7 @@
       }
     }
 
-    function updateBackground(currentHour) {
-      const backgroundImage = document.getElementById('backgroundImage');
-      const clock = document.getElementById('clock');
-      const date = document.getElementById('date');
-      const weather = document.getElementById('weather');
-      const weatherDescription = document.getElementById('weatherDescription');
-
-      if (currentHour >= 6 && currentHour < 18) {
-        clock.style.color = "#990000";
-        date.style.color = "#990000";
-        weather.style.color = "#ffffff";
-        weatherDescription.style.color = "#ffffff";
-      } else {
-        clock.style.color = "#990000";
-        date.style.color = "#990000";
-        weather.style.color = "#ffffff";
-        weatherDescription.style.color = "#ffffff";
-      }
-    }
-
+    
     setInterval(updateClock, 1000);
     updateClock();
     fetchWeather();
@@ -216,6 +197,7 @@
   </script>
 </body>
 </html>
+
 
 
 
