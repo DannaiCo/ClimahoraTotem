@@ -35,10 +35,10 @@
       /* HORA */
       .time {
         position: absolute;
-        top: 20.9%;
+        top: 17.7%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 113px;
+        font-size: 119px;
         font-weight: bold;
         color: #ffffff;
       }
@@ -47,12 +47,12 @@
       .date {
         position: absolute;
         width: max-content;
-        top: 35%;
+        top: 29%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 64px;
+        font-size: 75px;
         font-weight: bold;
-        color:#0033d3;
+        color: #04308c;
         text-align: center;
         line-height: 1.1;
       }
@@ -60,44 +60,46 @@
       /* ICONO GRANDE */
       .weather-icon-big {
         position: absolute;
-        top: 64%;
+        top: 62%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 150px;
+        width: 184px;
         height: 150px;
       }
 
       /* TEMPERATURA */
       .weather {
         position: absolute;
-        top: 54%;
+        top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 110px;
+        font-size: 129px;
         font-weight: bold;
-        color: #0033d3;
+        color: #0857d3;
       }
 
       /* DESCRIPCIÓN */
       .weather-description {
         position: absolute;
         width: max-content;
-        top: 73%;
+        top: 54%;
         left: 50%;
+        font-weight: bold;
         transform: translate(-50%, -50%);
         font-size: 40px;
-        color: #0033d3;
+        color: #04308c;
       }
 
       /* CIUDAD */
       .city {
         position: absolute;
-        top: 47.7%;
+        top: 40%;
         left: 50%;
+        font-weight: bold;
         transform: translate(-50%, -50%);
-        font-size: 41px;
+        font-size: 49px;
         font-weight: semibold;
-        color: #6b6f75;
+        color: #04308c;
       }
     </style>
   </head>
@@ -105,7 +107,7 @@
   <body>
     <div class="container">
       <video autoplay muted loop id="fondo">
-        <source id="videoSource" src="CLIMATM_DIA.mp4" type="video/mp4" />
+        <source id="videoSource" src="CLIMADIA.mp4" type="video/mp4" />
       </video>
 
       <div id="clock" class="time"></div>
@@ -162,9 +164,9 @@
         let newSrc;
 
         if (hour >= 18 || hour < 6) {
-          newSrc = "CLIMATM_NOCHE.mp4";
+          newSrc = "CLIMANOCHE.mp4";
         } else {
-          newSrc = "CLIMATM_DIA.mp4";
+          newSrc = "CLIMADIA.mp4";
         }
 
         if (source.getAttribute("src") !== newSrc) {
